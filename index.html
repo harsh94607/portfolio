@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>harshportfolio</title>
+    <style>
+              *{
+                  margin: 0;
+                  padding: 0;
+              }
+
+              .nav{
+                  height: 55px;
+                  display: flex;
+                  justify-content: space-between;
+                  align-items: center;
+                  background-color: #2B2A4C;
+
+              }
+              .nav .left_nav{
+                  margin-left: 2% ;
+                  font-weight: bolder;
+                  font-size: 27px;
+                  color: #bf6060;
+
+              }
+              .nav .right_nav{
+                  font-weight: bolder;
+                  font-size: 22px;
+                  color: #EA906C;
+                  width: 55%;
+
+           }
+              .nav .right_nav ul{
+                 display: flex;
+                 justify-content: space-evenly;
+
+
+           }
+           .nav .right_nav ul li{
+              list-style: none;
+           }
+
+           .nav .right_nav ul a{
+              text-decoration: none;
+              color: #EA906C;
+           }
+           .nav .right_nav ul a:hover{
+              color: #9e583c;
+              font-size: 1.1em;
+           }
+
+
+
+
+              .imge{
+
+                  width: 18%;
+                  height:90%;
+                  position: absolute;
+                  bottom: 0;
+                  right: 40%;
+              }
+
+              .imge img{
+                  left: 55%;
+                  bottom: 0%;
+                  height: 80%;
+                  position: absolute;
+                  transform: translateX(-60%);
+                  transition: all 1s , left 1s;
+              }
+
+
+
+
+
+              .imge:hover .yellow{
+                  bottom: 40px;
+              }
+              .imge:hover .boy{
+                  left: 45%;
+              }
+
+              .intro{
+                  display: flex;
+                  align-items: center;
+                  /* justify-content: center; */
+                  flex-direction: column;
+                  font-size: 50px;
+                  font-family:cursive;
+                  color: #36364e;
+              }
+              .main{
+                  display: flex;
+                  /* align-content: center; */
+                  align-items: center;
+                  justify-content: center;
+              }
+              .harsh ,.element{
+                  color: #a92323
+              }
+
+
+              .second{
+                  position: relative;
+                  bottom: 0px;
+
+              }
+
+              body{
+                  background-color: #EEE2DE;
+              }
+
+
+              @media(max-width:653px){
+                  .imge img {
+                      height: 50%;
+              }
+            }
+              @media(max-width:607px){
+                  .nav .right_nav {
+                      font-size: 20px;
+                      width: 100%;
+              }
+              .nav {
+          height: 73px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-evenly;
+          align-items: center;
+          background-color: #2B2A4C;
+      }
+      p {
+          display: contents;
+      }
+          }
+
+      @media (max-width:530px) {
+          .nav{
+              height: 7em;
+          }
+          .second{
+              font-size: 30px;
+          }
+
+          .intro{
+              margin-top: 40px;
+          }
+
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="nav">
+        <div class="left_nav">
+          <h3>Harsh's Portfolio</h3>
+        </div>
+        <div class="right_nav">
+          <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>About</li></a>
+            <a href="#"> <li>Projects</li></a>
+            <a href="contact.html" target="_blank"> <li>Contact Me</li></a>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="intro">
+        <p>Hi, My name is<span class="harsh"> Harsh Goyal</span></p>
+        <p class="second">
+          and I am a passsionate <span id="element" class="element"></span>
+        </p>
+      </div>
+      <div class="imge">
+        <img src="giphy.gif" class="yellow" />
+        <img src="profile_pic-removebg-preview.png" class="boy" />
+      </div>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <!-- Setup and start animation! -->
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "Software Developer",
+          " Video Editor",
+          "Graphic Designer",
+          "Software Developer",
+          " Video Editor",
+          "Graphic Designer",
+        ],
+        typeSpeed: 60,
+        backDelay: 60,
+        // callback: function ()
+      });
+    </script>
+  </body>
+</html>
